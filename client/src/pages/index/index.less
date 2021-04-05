@@ -1,0 +1,130 @@
+.at-tabs__header {
+  width: 70%;
+  position: sticky;
+  top: 0;
+}
+.at-tabs__header::after {
+  border: 0;
+}
+
+.container {
+}
+
+.at-tabs__item-underline {
+  width: 30%;
+  left: 35%;
+  height: 6px;
+  background-color: #154a8b;
+}
+
+.at-tabs__item {
+  color: #000;
+  font-family: PingFangSC-Medium;
+  opacity: 0.5;
+  font-size: 36px;
+}
+
+.at-tabs__item--active {
+  color: #154a8b;
+  opacity: 1;
+  font-weight: bold;
+}
+.at-tabs-pane {
+  overflow: auto;
+}
+
+.activity-container {
+  padding: 22px 0;
+  width: 100%;
+  height: 920px;
+  position: relative;
+
+  image {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+  }
+
+  .share-container {
+    position: absolute;
+    bottom: 124px;
+    width: 144px;
+    height: 64px;
+    right: 0;
+    background-color: rgba(21, 74, 139, 0.1);
+    border-radius: 200px 0 0 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px 0 18px;
+    font-size: 32px;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s;
+
+    image {
+      width: 44px;
+      height: 44px;
+    }
+  }
+  .share-container::after {
+    border: none;
+  }
+}
+
+.activity-light-container {
+  height: 320px;
+  margin: 22px 0;
+  width: 50%;
+  float: left;
+
+  .activity-light-content {
+    background: #f7f8fa;
+    border-radius: 24px;
+    text-align: left;
+
+    .light-title {
+      font-size: 30px;
+      height: 72px;
+    }
+    .light-date {
+      color: #aaa;
+      font-size: 28px;
+    }
+    .light-prov {
+      color: #aaa;
+      font-size: 28px;
+    }
+  }
+  image {
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+}
+
+.toggle-container {
+  position: absolute;
+  width: 40px;
+  height: 42px;
+  right: 60px;
+  top: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .toggle-item {
+    width: 17px;
+    height: 17px;
+    background-color: rgba(68, 68, 68);
+    transition: all 0.3s;
+  }
+
+  .toggle-active {
+    width: 40px;
+  }
+  .toggle-inactive {
+    width: 0;
+  }
+}
