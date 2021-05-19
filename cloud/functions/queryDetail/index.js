@@ -16,6 +16,7 @@ exports.main = async (event, context) => {
   console.log(event)
   console.log(context)
   let result = [];
+  const _ = db.command;
   await db
     .collection('activities')
     .where({
@@ -27,6 +28,15 @@ exports.main = async (event, context) => {
     });
   // 可执行其他自定义逻辑
   // console.log 的内容可以在云开发云函数调用日志查看
+
+  // 浏览次数更新
+  await db.collection('activities').where({
+    id: event.id,
+  }).update({
+    data: {
+      pv: _.inc(1)
+    }
+  })
 
   return result;
 }

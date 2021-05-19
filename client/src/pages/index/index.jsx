@@ -79,7 +79,7 @@ export default class Index extends Component {
       }
     }
     return {
-      title: "三十而立攀登之旅",
+      title: "三十而立为爱攀登",
       path: "/pages/index/index"
     };
   }

@@ -1,9 +1,9 @@
 {
   "miniprogramRoot": "client/dist/",
   "cloudfunctionRoot": "cloud/functions/",
-  "projectname": "wxapp-taro-thirty",
+  "projectname": "%E4%B8%89%E5%8D%81%E8%80%8C%E7%AB%8B%E4%B8%BA%E7%88%B1%E6%94%80%E7%99%BB",
   "description": "",
-  "appid": "wxd6461ccc0fdf0bf7",
+  "appid": "wx75a3e14c3510ee28",
   "setting": {
     "urlCheck": true,
     "es6": false,
@@ -24,7 +24,7 @@
     "compileHotReLoad": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": false,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],

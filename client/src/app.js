@@ -12,7 +12,7 @@ class App extends Component {
   componentDidMount () {
     if (process.env.TARO_ENV === 'weapp') {
       Taro.cloud.init({
-        env: "prod-thirty-1gf20piz69f84cdb"
+        env: "cloud1-4gelhm0mac74a842"
       });
     }
   }

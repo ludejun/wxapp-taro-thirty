@@ -199,7 +199,7 @@ export default class Index extends Component {
               ) {
                 return <Image src={item} mode="widthFix" />;
               } else {
-                return <Text>{item}</Text>;
+                return <View><Text>{item}</Text></View>;
               }
             })}
           </View>
