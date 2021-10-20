@@ -86,20 +86,27 @@ export default class Index extends Component {
         }
       })
       .then(res => {
-        console.log('报名结果：', res)
+        console.log("报名结果：", res);
         Taro.showToast({
-          title: res.result || '恭喜报名成功～'
+          title: res.result || "恭喜报名成功～"
         });
         this.setState({
           submitLoading: false
         });
-          
       })
       .catch(err => {
         this.setState({
           submitLoading: false
         });
       });
+  }
+  onPayImgClick() {
+    Taro.previewImage({
+      showmenu: true,
+      urls: [
+        "cloud://cloud1-4gelhm0mac74a842.636c-cloud1-4gelhm0mac74a842-1305964684/images/WechatIMG770.png"
+      ]
+    });
   }
 
   render() {
@@ -274,6 +281,22 @@ export default class Index extends Component {
               marginTop: "58rpx"
             }}
           >
+            <View
+              className="form-title"
+              style={{ marginBottom: "32rpx" }}
+              onClick={() => this.onPayImgClick()}
+            >
+              <Text>费用支付</Text>
+              <Image
+                src={
+                  "cloud://cloud1-4gelhm0mac74a842.636c-cloud1-4gelhm0mac74a842-1305964684/images/WechatIMG770.png"
+                }
+                style={{ width: "100%" }}
+                mode="widthFix"
+                show-menu-by-longpress
+              />
+            </View>
+
             <View className="form-title" style={{ marginBottom: "32rpx" }}>
               <Text>报名联系人</Text>
             </View>
